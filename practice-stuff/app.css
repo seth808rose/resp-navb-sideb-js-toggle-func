@@ -48,7 +48,7 @@ body {
   list-style: none;
 }
 
-.nav-burger {
+.sidebar-toggle {
   background: transparent;
   border: transparent;
   font-size: 2rem;
@@ -84,7 +84,7 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
   }
-  .nav-burger {
+  .sidebar-toggle {
     display: none;
   }
 }
@@ -128,6 +128,11 @@ sidebar
   transform: translateX(100%);
 }
 
+/* show sidebar JS */
+.show-sidebar {
+  transform: translateX(0);
+}
+
 .bar-links {
   text-align: center;
 }
@@ -152,9 +157,8 @@ sidebar
 
 .bar-links i {
   color: white;
-  font-size: 1.5rem;
   transition: all 0.9s ease-in-out;
-  font-size: 4rem;
+  font-size: 2.5rem;
   padding: 2rem;
 }
 /* Hiding the icons and only showing the navbar links */
@@ -168,20 +172,20 @@ sidebar
   transition: all 0.9s ease-in-out;
 }
 
-.bar-burger {
+.sidebar-close {
   background: transparent;
   border: transparent;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
   cursor: pointer;
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 6px;
+  right: 10px;
   transition: all 0.3s linear;
 }
 
-.bar-burger:hover {
-  color: rgb(229, 147, 161);
+.sidebar-close:hover {
+  color: red;
 }
 
 .hero img {
